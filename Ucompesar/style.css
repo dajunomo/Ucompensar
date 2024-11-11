@@ -46,22 +46,44 @@ body {
 
 
 .main-content {
-    padding: 2rem;
+    display: flexbox; 
 }
 
+.program-info{
+    padding: 10%;
+    padding-bottom: none;
+
+
+}
+
+.bloque2{
+    padding-top: none;
+    display: flex;
+    width: 100%;
+}
+
+.detallep1{
+    width: 50%;
+}
 
 .detallep{
-    border: #002060;
+    padding: 3%;
+    width: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #333;
     display: flex;
     align-content: flex-end;
-    color: #002060;
-
+    color: white;
 
 }
 
 .program-info {
+    width: 100%;
+    align-content: center;
     display: flex;
     gap: 2rem;
+    
 }
 
 .program-info .tag {
@@ -84,11 +106,22 @@ body {
 }
 
 
-.form-section form {
+.formulario{
+    width: 90%;
+    align-items: center;
+    padding-top: 5%;
+    border-top: 1px solid #ff8400;
+    border-bottom: 1px solid #ff8400;
+    margin: 2%;
+    margin-bottom: 2%;
+}
+
+.formulario form {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    max-width: 600px;
+    
 }
 
 input, select {
@@ -108,62 +141,72 @@ input, select {
 }
 
 
-.titulaciones .degree-cards {
+.titulaciones h1{
+text-align: center;
+margin: 5%;
+font-size: 50px;
+
+}
+
+.titulaciones .btargetas {
+    padding-left: 8%;
     display: flex;
+    width: 100%;
     gap: 1.5rem;
 }
 
-.card {
-    background-color: #fff;
+.targeta {
+    padding-top: 10%;
+    padding-bottom: 50%;
+    background-color: #f8f5f5;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #F8F7F5;
     border-radius: 5px;
     width: 30%;
     text-align: center;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem;
+.targeta h3, p {
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
+.targeta button{
+    margin-top: 10%;
+    text-align: center;
     align-items: center;
+    align-content: center;
 }
-
 
 .campo-laboral {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
-    max-width: 1200px;
+    
     margin: 2rem auto;
-    background-color: #ffffff;
+   
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
-.job-list {
+.listac {
     flex: 1;
     padding: 1rem;
 }
 
-.job-list h2 {
+.listac h2 {
     font-size: 1.8rem;
     color: #002060;
     margin-bottom: 1rem;
 }
 
-.job-list ul {
+.listac ul {
     list-style-type: disc;
     padding-left: 1.5rem;
 }
 
-.job-list ul li {
+.listac ul li {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #333;
@@ -185,5 +228,90 @@ input, select {
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.bloquef {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.perfil h2{
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.perfild {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.expertise-section h2 {
+            color: #003366;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .expertise-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .expertise-list li {
+            color: #333;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .expertise-list li::before {
+            content: "•";
+            color: #ff6600;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+
+        .study-plan-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 
