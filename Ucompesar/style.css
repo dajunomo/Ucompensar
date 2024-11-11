@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+.header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    width: 100%;
+
+}
+.navbar a {
+    margin: 0 0.5rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.btn-cta {
+    background-color: #ff8400;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.main-content {
+    padding: 2rem;
+}
+
+
+.detallep{
+    border: #002060;
+    display: flex;
+    align-content: flex-end;
+    color: #002060;
+
+
+}
+
+.program-info {
+    display: flex;
+    gap: 2rem;
+}
+
+.program-info .tag {
+    background-color: #ff8400;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.btn-register, .btn-credits {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #fff;
+    color: #ff8400;
+    border: 2px solid #ff8400;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.form-section form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+input, select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-submit {
+    padding: 0.7rem 1.5rem;
+    background-color: #ff8400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.titulaciones .degree-cards {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.campo-laboral {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-list {
+    flex: 1;
+    padding: 1rem;
+}
+
+.job-list h2 {
+    font-size: 1.8rem;
+    color: #002060;
+    margin-bottom: 1rem;
+}
+
+.job-list ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.job-list ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+.image-gallery {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
