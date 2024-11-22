@@ -1,0 +1,202 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    animation: fade-in 2s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    animation: slide-in-left 1.5s ease-in-out;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    animation: fade-in 1.5s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+section:nth-child(odd) {
+    animation-delay: 0.7s;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    animation: slide-in-right 1.5s ease-in-out;
+}
+
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.info p {
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.info p:hover {
+    color: #003366;
+}
+
+.rrss{
+    display: flexbox;
+    padding-left: 10px;
+}
+
+.rrss img{
+    padding-top: 10px;
+    width: 4%;
+}
+
+.rrss img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "✔";
+    color: #003366;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover::before {
+    transform: scale(1);
+}
+
+ul li:hover {
+    color: #003366;
+}
+
+ul p{
+    text-align: justify;
+
+
+
+}
+
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slide-up 1.5s ease-in-out;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Keyframes for Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
